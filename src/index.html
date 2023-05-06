@@ -4,24 +4,32 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <title>Chess Club</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <include src="./views/header.html"></include>
+    <main class="portada">
+      <h1 class="portada__h1">Chess Club</h1>
+      <hr class="portada__hr">
+      <p class="portada__p">Chess Club es la ilusión de crecer, disfrutar y compartir. Fundado por un grupo de aficionados y aficionadas amantes de este juego. Nuestro propósito se basa en crear un grupo de amigos en el que a través del ajedrez podamos crecer juntos. ¿Te animas?</p>
+      <a class="portada__a" href="./information.html">Conócenos</a>
+      <img class="portada__img" src="https://estaticos-cdn.sport.es/clip/f226fdd9-110a-4748-ab98-4c10f66460d2_source-aspect-ratio_default_0.png" alt="Tycho Live at Toronto">
+      <div class="portada__div">
+        <a class="portada__div__a" href="https://goo.gl/maps/GUCyvTgvsjTZf1gX9" target="_blank">
+          <i class="fa-solid fa-location-dot"></i>
+          C/Felipe Rinaldi, 25<br>Valencia
+        </a>            
+      </div>
+      <div class="portada__div2">
+        <a class="portada__div2__a" href="./members.html"><i class="fa-solid fa-people-group"></i></a>        
+      </div>
+      <div class="portada__square1"></div>
+      <div class="portada__square2"></div>
+      <div class="portada__square3"></div>
+      <button class="portada__button" type="button"><a href="./practica.html"><i class="fa-solid fa-chess portada__i"></i></a></button>
+    </main>
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>

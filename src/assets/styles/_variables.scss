@@ -1,12 +1,75 @@
 @use "sass:color";
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+/* ------------------------------------ \*
+   #FONTS
+\* ------------------------------------ */
+
+@font-face {
+   font-family: Montserrat-regular;
+   font-style: normal;
+   font-weight: normal;
+   src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+   font-display: swap;
+}
+ 
+@font-face {
+  font-family: Montserrat-semibold;
+  font-style: normal;
+  font-weight: normal;   
+  src: url('../fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+  font-display: swap;
+}
+ 
+@font-face {
+  font-family: Montserrat-extrabold;
+  font-style: normal;
+  font-weight: normal;   
+  src: url('../fonts/Montserrat/static/Montserrat-ExtraBold.ttf') format('truetype');   
+  font-display: swap;
+}
+ 
+@font-face {
+  font-family: Montserrat-black;
+  font-style: normal;
+  font-weight: normal;   
+  src: url('../fonts/Montserrat/static/Montserrat-Black.ttf') format('truetype');   
+  font-display: swap;
+}
+
+$font-family-sans-serif: 'Montserrat-regular', -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
+  "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
+$main-title: 'Montserrat-extrabold';
+$secondary-title: 'Montserrat-semibold';
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+/* ------------------------------------ \*
+   #COLORS
+\* ------------------------------------ */
 
-$mqMinWidth: 420px;
+$main-color: #f5f5f7;
+$secondary-color: #fff;
+$third-color: #000;
+$main-text-color: #2a2a2a;
+$secondary-text-color: #8c8c9f;
+$black-shadow: color.scale($third-color, $lightness: 60%);
+
+$theme-colors: (
+  "primary": $secondary-text-color
+);
+
+.btn-primary {
+  &--bs-btn-color {
+    color: $main-color;
+  }  
+}
+
+/* ------------------------------------ \*
+   #BREAKPOINTS
+\* ------------------------------------ */
+
+$xs-width: 0;
+$s-width: 576px;
+$m-width: 768px;
+$l-width: 992px;
+$xl-width: 1200px;

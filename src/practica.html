@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <link rel="stylesheet" href="../node_modules/lazyframe/dist/lazyframe.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <script type="module" src="./assets/scripts/main.js" async></script>
+    <title>Chess Club</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <main class="practica">
+      <article class="practica__article">
+        <h1 class="practica__h1">Inspírate</h1>
+        <p>En esta página ofrecemos distintas opciones para que busques tu inspiración y te motives.</p>
+        <div id="videoContainer" class="video"></div>
+        <section>
+          <h2 class="practica__h2">Practica tus habilidades</h2>
+          <p>Juega de forma online y practica tus habilidades.</p>
+          <iframe class="practica__iframe" src="https://fritz.chessbase.com"></iframe>
+        </section>
+        <section>
+          <h2 class="practica__h2">Maratón de series y películas</h2>
+          <p>¡Palomitas, cine y acción! Disfruta del siguiente repertorio de series, películas y documentales de ajedrez que no deberías perderte.</p>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/images/enBuscaDeBobbyFisher.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>En Busca de Bobby Fischer</h5>
+                  <p>Fred Waitzkin descubre la excepcional habilidad de su hijo, Josh, en la práctica del ajedrez. Esto le lleva a contratar a Bruce Pandolfini, un excampeón, para que le dé clases.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/hijoDeCain.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Hijo de Caín</h5>
+                  <p>Una familia de clase alta cuyo hijo tiene muchos problemas, contrata a un psicólogo para que le ayude. Sin embargo, nada será como parecía en un principio.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/laJugadaMaestra.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>La jugada maestra</h5>
+                  <p>La historia de la preparación del legendario enfrentamiento por el campeonato del mundo entre Bobby Fischer, campeón de ajedrez norteamericano, y el campeón soviético Boris Spassky.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/GambitoDeDama.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Gambito de dama</h5>
+                  <p>La huérfana y prodigio del ajedrez, Beth Harmon, lucha contra la adicción mientras busca convertirse en la mejor jugadora de ajedrez del mundo.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/Magnus.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Magnus</h5>
+                  <p>Nacido en 1990, el prodigio noruego del ajedrez Magnus Carlsen se convierte en gran maestro a los 13 años y en campeón del mundo en 2013.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        <section>
+          <h2 class="practica__h2">Disfruta de la lectura</h2>
+          <p>Disfruta de un día de lectura y mejora tus habilidades.</p>
+          <div class="practica__cards">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/images/libro1.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bobby Fischer enseña ajedrez</h5>
+                <p class="card-text">Libro de acertijos de ajedrez escrito por Bobby Fischer y coescrito por Stuart Margulies y Donn Mosenfelder, publicado originalmente en 1966. Es uno de los libros de ajedrez más vendidos de todos los tiempos, con más de un millón de copias vendidas.</p>
+                <a href="https://www.amazon.es/Bobby-Fischer-Teaches-Chess/dp/0553263153/ref=d_pd_sbs_sccl_1_2/262-1549693-0263300?pd_rd_w=OHAV0&content-id=amzn1.sym.c80953b2-c7d3-4808-bc80-fc3dfc60e012&pf_rd_p=c80953b2-c7d3-4808-bc80-fc3dfc60e012&pf_rd_r=99SRHN8SSEAFZWKRDXRR&pd_rd_wg=zmytQ&pd_rd_r=9fa2a58b-eea5-4b1d-a47d-b6fe675d855d&pd_rd_i=0553263153&psc=1" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/images/libro2.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cómo repensar tu ajedrez</h5>
+                <p class="card-text">Este libro se enfoca en el proceso de pensamiento que hay detrás de los planes del medio juego y cómo percibir desbalances en las posiciones. Escribe con humor y un entendimiento profundo sobre las limitaciones del ajedrecista aficionado.</p>
+                <a href="https://www.amazon.es/How-Reassess-Your-Chess-Imbalances/dp/1890085138" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/images/libro3.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mi Sistema</h5>
+                <p class="card-text">Este libro de Aron Nimzowitsch es un ejemplo excelente de un libro clásico de ajedrez. Ha permanecido en la lista de los cinco libros más vendidos de todos los tiempos, y ¡ha sido recomendado por grandes maestros desde 1925!</p>
+                <a href="https://www.amazon.es/Mi-sistema-Tactica-Y-Estrategia/dp/8492517123" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/images/libro4.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Torneo Internacional de Ajedrez de Zurich</h5>
+                <p class="card-text">Un serio candidato para ser considerado como el mejor libro de todos los tiempos sobre un torneo de ajedrez, el libro de David Bronstein examina el Torneo de Candidatos que condujo al encuentro por el campeonato del mundo contra Mikhail Botvinnik en 1954.</p>
+                <a href="https://www.amazon.es/El-ajedrez-torneo-Club-Ajedrez/dp/842450397X/ref=asc_df_842450397X/?tag=googshopes-21&linkCode=df0&hvadid=195200204086&hvpos=&hvnetw=g&hvrand=17248860887605458213&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1005545&hvtargid=pla-138246605835&psc=1" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>        
+    </main>
+    <include src="./views/footer.html"></include>
+  </body>
+</html>
