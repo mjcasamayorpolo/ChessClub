@@ -11,7 +11,7 @@
     &__h1 {
         text-align: center;
         color: $secondary-text-color;
-        font-size: calc(0.5em + 2vw);
+        font-size: calc(1em + 2vw);
         margin: 0.8em;
     }
 
@@ -33,10 +33,15 @@
 
         &__img {
             width: 80%;
+            margin: auto;
         }
 
         &__p {
             padding: 0 5%;
+        }
+
+        &__h2 {
+            font-weight: bold;
         }
     }
 }
