@@ -31,16 +31,16 @@
         flex-basis: 33.33%;
         text-align: center;
 
-        &__img {
+        &--figure {
             width: 80%;
             margin: auto;
         }
 
-        &__p {
+        &--p {
             padding: 0 5%;
         }
 
-        &__h2 {
+        &--h2 {
             font-weight: bold;
         }
     }

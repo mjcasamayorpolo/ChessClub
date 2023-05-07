@@ -48,7 +48,7 @@
         grid-column: 1 / 4;
     }
 
-    &__div {
+    &__location {
         text-transform: uppercase;
         line-height: 1.5;
         font-weight: bold;
@@ -56,7 +56,7 @@
         grid-row: 5 / 6;
         grid-column: 1 / 1;
 
-        &__a {
+        &--a {
             margin: auto;
             color: $secondary-text-color;
             text-decoration: none;
@@ -76,7 +76,7 @@
         grid-column: 2 / 3;
 
         &:hover {
-            background-color: #8c8c9f85;
+            background-color: $secondary-text-color--hover;
             color: $secondary-text-color;
         }
     }
@@ -85,7 +85,7 @@
         color: $main-color;
     }
 
-    &__div2 {
+    &__members {
         grid-row: 5 / 6;
         grid-column: 3 / 4;
         background: $main-color;
@@ -95,10 +95,10 @@
         align-content: center;
 
         &:hover {
-            background-color: #f5f5f78f;
+            background-color: $main-color--hover;
         }
 
-        &__a {
+        &--a {
             margin: auto;
             color: $secondary-text-color;
 
@@ -167,7 +167,7 @@
                 grid-row: 1 / 5;
             }
 
-            &__div {
+            &__location {
                 grid-column: 6 / 7;
                 grid-row: 3 / 4;
                 z-index: 2;
@@ -176,13 +176,13 @@
                 display: flex;
 
                 &:hover {
-                    background-color: #f5f5f78f;
+                    background-color: $main-color--hover;
                 }
         
                 
             }
 
-            &__div2 {
+            &__members {
                 grid-column: 4 / 5;
                 grid-row: 3 / 4;
                 z-index: 2;
@@ -197,32 +197,26 @@
                 position: initial;
                 padding: 0;
                 font-size: 2.5em;
-
-                /*padding: 1em 2em;
-                position: absolute;
-                right: 1em;
-                bottom: 1em;
-                font-size: 3em;*/
             }
 
             &__square1 {
                 grid-column: 1 / 2;
                 grid-row: 4 / 5;
-                background-color: #8c8c9f85;
+                background-color: $secondary-text-color--hover;
                 display: block;
             }
 
             &__square2 {
                 grid-column: 2 / 3;
                 grid-row: 3 / 4;
-                background: #f5f5f78f;
+                background: $main-color--hover;
                 display: block;
             }
 
             &__square3 {
                 grid-column: 3 / 4;
                 grid-row: 4 / 5;
-                background-color: #8c8c9f85;
+                background-color: $secondary-text-color--hover;
                 display: block;
             }
         }
@@ -231,6 +225,12 @@
             &__hr {
               opacity: 1;
             }
+        }
+    }
+
+    @supports (not (display:grid)) {
+        &__img {
+            height: auto;
         }
     }
 }
