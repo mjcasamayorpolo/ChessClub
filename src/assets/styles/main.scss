@@ -6,7 +6,7 @@
 @import "layouts/information";
 @import "layouts/inspiration";
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
-@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap/scss/bootstrap";
 
 /* ------------------------------------ \*
    #GENERAL
@@ -18,13 +18,13 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: $main-color;
   color: $main-text-color;
   font-family: $font-family-sans-serif;
   font-size: 1.6rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 body,

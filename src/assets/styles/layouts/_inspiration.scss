@@ -1,8 +1,8 @@
 .inspiration {
-    justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;  
 
     .article {
         max-width: 800px;
@@ -10,10 +10,10 @@
         padding: 1em;
 
         &__h1 {
-            text-align: center;
-            color: $secondary-text-color;
-            font-size: calc(1em + 2vw);
             margin: 0.8em;
+            color: $secondary-text-color;
+            font-size: calc(1em + 2vw);           
+            text-align: center;                      
         }
 
         &__section {
@@ -52,12 +52,10 @@
             }
         }
 
-        .peliculas {
-            .carruselItem {
-                &__div {
-                    &--h5{
-                        font-size: 1.5em;
-                    }
+        .carrusel {
+            &__div {
+                &--h5{
+                    font-size: 1.5em;
                 }
             }
         }

@@ -9,18 +9,18 @@
     text-align: justify;
 
     &__h1 {
-        text-align: center;
+        margin: 0.8em;
         color: $secondary-text-color;
         font-size: calc(1em + 2vw);
-        margin: 0.8em;
+        text-align: center;       
+                
     }
 
     &__div{
         display: flex;
-        justify-content: center;        
-        flex-wrap: wrap;
-        align-content: space-between;
-        flex-direction: column;
+        flex-flow: column wrap;  
+        align-content: space-between;     
+        justify-content: center;           
 
         @media (min-width: $xl-width) {
             flex-direction: row;
