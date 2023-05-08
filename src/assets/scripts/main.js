@@ -3,13 +3,13 @@ import { Tooltip } from "bootstrap";
 import { Calendar } from 'fullcalendar';
 import lazyframe from "lazyframe";
 
-var myCarousel = document.querySelector('#carouselExampleCaptions')
+var myCarousel = document.querySelector('.peliculas__div')
 var carousel = new bootstrap.Carousel(myCarousel, {
   interval: 5000,
   wrap: false
 });
 
-const videoContainer = document.getElementById('videoContainer');
+const videoContainer = document.querySelector('.video');
 const lazyVideo = document.createElement('div');
 lazyVideo.classList.add('lazyframe');
 lazyVideo.setAttribute('data-vendor','youtube');
@@ -21,7 +21,7 @@ lazyframe(lazyVideo,{
 });
 videoContainer.appendChild(lazyVideo);
 
-const calendarEl = document.getElementById('calendar')
+const calendarEl = document.querySelector('.calendar__div')
 const calendar = new Calendar(calendarEl, {
   initialView: 'dayGridMonth',
   locale: 'es-ES',
