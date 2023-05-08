@@ -130,7 +130,8 @@
                 width: 20ch;
                 height: 6px;
                 border: 0;
-                background-color: $secondary-text-color;              
+                opacity: 1;
+                background-color: $secondary-text-color;                              
             }
 
             &__p {
@@ -215,17 +216,42 @@
                 background-color: $secondary-text-color-hover;                
             }
         }
-
-        @media (min-width: $xl-width) {
-            &__hr {
-              opacity: 1;
-            }
-        }
     }
 
     @supports (not (display:grid)) {
+        max-width: 800px;
+
         &__img {
+            display: block;
+            width: 50%;
             height: auto;
+            margin-right: auto;
+            margin-left: auto;           
+        }
+
+        &__location {
+            display: block;
+            width: 50%;
+            margin-right: auto;
+            margin-left: auto;            
+        }
+
+        &__members {
+            display: flex;
+            width: 50%;
+            margin-right: auto;
+            margin-left: auto;           
+
+            &--a {
+                margin: 0;
+            }
+        }
+
+        &__button {
+            display: block;
+            width: 50%;
+            margin-right: auto;
+            margin-left: auto;          
         }
     }
 }
