@@ -17,14 +17,17 @@ html {
   font-size: 10px;
 }
 
-body {
-  // display: flex;
+body {  
   flex-direction: column;
   justify-content: space-between;
   background-color: $main-color;
   color: $main-text-color;
   font-family: $font-family-sans-serif;
   font-size: 1.6rem;
+
+  @supports (display:grid) {
+    display: flex;
+  }
 }
 
 body,
